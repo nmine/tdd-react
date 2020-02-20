@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
     render,
     fireEvent,
     cleanup,
 } from '@testing-library/react';
-import NewMessageForm from '../NewMessageForm';
+import NewMessageForm from '../form/NewMessageForm';
 
 describe('<NewMessageForm />', () => {
 
