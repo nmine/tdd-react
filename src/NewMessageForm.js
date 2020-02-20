@@ -7,6 +7,10 @@ const NewMessageForm = () => {
                 type="text"
                 data-testid="messageText"
             />
+            <button
+                data-testid="sendButton">
+                Send
+            </button>
         </div>
     )
 };
