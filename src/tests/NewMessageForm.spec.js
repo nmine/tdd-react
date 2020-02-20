@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     render,
     fireEvent,
@@ -7,13 +7,14 @@ import {
 import NewMessageForm from '../NewMessageForm';
 
 describe('<NewMessageForm />', () => {
+
     let getByTestId;
 
     afterEach(cleanup);
 
     describe('clicking the send button', () => {
         beforeEach(() => {
-            ({ getByTestId } = render(<NewMessageForm />));
+            ({getByTestId} = render(<NewMessageForm/>));
 
             fireEvent.change(
                 getByTestId('messageText'),
